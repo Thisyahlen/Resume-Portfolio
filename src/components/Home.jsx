@@ -60,7 +60,7 @@ const Home = () => {
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
               href={Resume}
               download="Resume"
               target="_blank"
