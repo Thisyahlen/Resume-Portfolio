@@ -13,9 +13,9 @@ const About = () => {
       }}
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
-        <div style={{ marginBottom: 80 }}>
+        <div style={{ marginBottom: 50 }}>
           <img
-            class="inline object-cover w-80 h-80 rounded-full"
+            class="inline object-cover w-60 h-60 rounded-full"
             src={me}
             alt="Profile image"
           />
