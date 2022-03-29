@@ -70,7 +70,7 @@ const Work = () => {
                   </button>
                 </a>
                 <a
-                  href="https://github.com/Thisyahlen/React-Password-Generator"
+                  href="https://github.com/Thisyahlen/Notflix-Movie-Webside"
                   target="_blank"
                 >
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
