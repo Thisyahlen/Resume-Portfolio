@@ -1,11 +1,10 @@
-import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
-import Cryptonite from "../assets/cryptonite.png";
-import RandomPass from "../assets/randompass.png";
-import Notflix from "../assets/notflix.png";
-import Goon from "../assets/goon.png";
-import WorkIm from "../assets/work.png";
+import React from 'react'
+import Cryptonite from '../assets/cryptonite.png'
+import RandomPass from '../assets/randompass.png'
+import Notflix from '../assets/notflix.png'
+import Goon from '../assets/goon.png'
+import WorkIm from '../assets/work.png'
+import Absurdle from '../assets/absurdle.png'
 
 const Work = () => {
   return (
@@ -14,7 +13,7 @@ const Work = () => {
       className="w-full md:h-screen text-gray-300 bg-[#0a192f]"
       style={{
         backgroundImage: `url(${WorkIm})`,
-        backgroundSize: "cover",
+        backgroundSize: 'cover',
       }}
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -61,7 +60,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider flex justify-center items-center">
-                Notflix{" "}
+                Notflix{' '}
               </span>
               <div className="pt-8 text-center">
                 <a href="https://notflixmovies.netlify.app/" target="_blank">
@@ -88,7 +87,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-white tracking-wider flex justify-center items-center">
-                Goon Universal Consultancy{" "}
+                Goon Universal Consultancy{' '}
               </span>
               <div className="pt-8 text-center">
                 <a href="https://goonuniversal.netlify.app/" target="_blank">
@@ -114,7 +113,7 @@ const Work = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-xl font-bold text-white tracking-wider flex justify-center items-center">
-                Random Password Generator{" "}
+                Random Password Generator{' '}
               </span>
               <div className="pt-8 text-center">
                 <a href="https://randompasswd.netlify.app/" target="_blank">
@@ -133,10 +132,36 @@ const Work = () => {
               </div>
             </div>
           </div>
+          <div
+            style={{ backgroundImage: `url(${Absurdle})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100">
+              <span className="text-xl font-bold text-white tracking-wider flex justify-center items-center">
+                Absurdle{' '}
+              </span>
+              <div className="pt-8 text-center">
+                <a href="https://absurdle.vercel.app/" target="_blank">
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Thisyahlen/Absurdle"
+                  target="_blank"
+                >
+                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Work;
+export default Work

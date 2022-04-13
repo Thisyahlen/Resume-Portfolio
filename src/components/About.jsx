@@ -1,6 +1,6 @@
-import React from "react";
-import Aboutme from "../assets/aboutme.jpg";
-import me from "../assets/me.png";
+import React from 'react'
+import Aboutme from '../assets/aboutme.jpg'
+import me from '../assets/me.png'
 
 const About = () => {
   return (
@@ -9,13 +9,13 @@ const About = () => {
       className="w-full h-screen bg-[#0a192f] text-gray-300"
       style={{
         backgroundImage: `url(${Aboutme})`,
-        backgroundSize: "cover",
+        backgroundSize: 'cover',
       }}
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div style={{ marginBottom: 50 }}>
           <img
-            class="inline object-cover w-60 h-60 rounded-full"
+            className="inline object-cover w-60 h-60 rounded-full"
             src={me}
             alt="Profile image"
           />
@@ -45,7 +45,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About
