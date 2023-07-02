@@ -1,21 +1,11 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Typewriter } from "react-simple-typewriter";
-// import "react-simple-typewriter/dist/index.css";
 import HomeBanner from "../assets/home_banner.jpg";
-import Work from "./Work";
-import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import ReactWhatsapp from "react-whatsapp";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import Resume from "../files/Thisyahlen_Resume.pdf";
-
-import {
-  faGithub,
-  faLinkedin,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 import "../css/social.css";
+import {socialMediaData} from '../constants/social-media-link-config'
 
 const Home = () => {
   return (
@@ -64,6 +54,7 @@ const Home = () => {
               href={Resume}
               download="Resume"
               target="_blank"
+              rel="noreferrer"
             >
               Get Resume
             </a>
@@ -74,27 +65,17 @@ const Home = () => {
           </button>
         </div>
         <div className="social-container">
-          <a
-            href="https://github.com/Thisyahlen"
-            className="github social"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} size="3x" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/thisyahlen-nair-070938208/"
-            className="linkedin social"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="3x" />
-          </a>
-          <a
-            href="https://wa.me/60122279255"
-            className="whatsapp social"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faWhatsapp} size="3x" />
-          </a>
+            {socialMediaData.map((social) => (
+        <a
+          key={social.name}
+          href={social.link}
+          className={`${social.name.toLowerCase()} social`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={social.icon} size="3x" />
+        </a>
+      ))}
         </div>
       </div>
     </div>
